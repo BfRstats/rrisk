@@ -1,0 +1,28 @@
+\name{uncertainties2matrix}
+\alias{uncertainties2matrix}
+\title{Function that displays the uncertaintiy information in a matrix}
+\usage{
+  uncertainties2matrix(modelUncertainties,modelSsystem)
+}
+\arguments{
+  \item{modelUncertainties}{the slot
+  unvertainties@uncertainties of an instance of the
+  \code{modelClass}}
+
+  \item{modelSsystem}{the slot scoring of an instance of
+  the \code{modelClass}}
+}
+\description{
+  Function that displays the uncertaintiy information in a
+  matrix
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel <- init.Model1()
+res<-uncertainties2matrix(rriskModel@uncertainties@uncertainties,rriskModel@scoring)}
+}
+\keyword{misc}
+

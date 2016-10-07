@@ -1,0 +1,23 @@
+\name{menu.define.mcrv}
+\alias{menu.define.mcrv}
+\title{Non-executable auxiliary function}
+\usage{
+  menu.define.mcrv(item,rriskModel,menuLevel=1)
+}
+\arguments{
+  \item{item}{...}
+
+  \item{rriskModel}{an instance of the \code{modelClass}}
+
+  \item{menuLevel}{numeric value indicating menu level}
+}
+\description{
+  This function generates the user menu for maintaining
+  scoring systems
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\keyword{items}
+

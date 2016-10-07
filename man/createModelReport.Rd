@@ -1,0 +1,30 @@
+\name{createModelReport}
+\alias{createModelReport}
+\title{creates and saves a complete model report}
+\usage{
+  createModelReport(rriskModel,rriskSession,menuLevel=1)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the
+  \code{rriskModel}}
+
+  \item{rriskSession}{is an instance of the
+  \code{rriskSession}}
+
+  \item{menuLevel}{...}
+}
+\description{
+  This function creates and saves a complete model report
+  by combining all other tolatex-functions.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1(demomode=TRUE)
+rriskSession<-init.rriskSession(useDemoModels = "all", demomode=TRUE)
+createModelReport(rriskModel=rriskModel, rriskSession=rriskSession)}
+}
+\keyword{report}
+

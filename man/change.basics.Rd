@@ -1,0 +1,32 @@
+\name{change.basics}
+\alias{change.basics}
+\title{Function for edditing model slot 'basics'}
+\usage{
+  change.basics(basics)
+}
+\arguments{
+  \item{basics}{(model basics) is an object of class
+  \code{modelBasicsClass}}
+}
+\value{
+  This function returns edited model slot 'basics'.
+}
+\description{
+  A change function for
+  \code{\linkS4class{modelBasicsClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{model<-init.Model1()
+model@basics<-change.basics(model@basics)
+model@basics}
+}
+\keyword{edit}
+

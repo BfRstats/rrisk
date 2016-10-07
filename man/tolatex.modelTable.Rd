@@ -1,0 +1,29 @@
+\name{tolatex.modelTable}
+\alias{tolatex.modelTable}
+\title{producing LaTeX codes listing model items in order of their occurrence
+in the model}
+\usage{
+  tolatex.modelTable(rriskModel, file.name)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the
+  \code{rriskModel}}
+
+  \item{file.name}{is a character value that indicates the
+  Tex file where codes to be written into}
+}
+\description{
+  This creates the LaTeX scripts for the last table in the
+  appendix - "Model items in the order of occurrence in the
+  model".
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+tolatex.modelTable(rriskModel=rriskModel,file.name="report.tex")}
+}
+\keyword{report}
+

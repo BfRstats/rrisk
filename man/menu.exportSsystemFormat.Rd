@@ -1,0 +1,27 @@
+\name{menu.exportSsystemFormat}
+\alias{menu.exportSsystemFormat}
+\title{Function generating the user menu for exporting a scoring system with various possibilities}
+\usage{
+  menu.exportSsystemFormat(rriskSsystem,menuLevel=1)
+}
+\arguments{
+  \item{rriskSsystem}{is a sigle one slot of the slot
+  scoringsystems from an instance of \code{rriskClass}}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+}
+\description{
+  This function generates the user menu for exporting a
+  scoring system with various possibilities.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession<-init.rriskSession(useDemoModels = "all")
+menu.exportSsystemFormat(rriskSession@scoringsystems[[1]],menuLevel=1)}
+}
+\keyword{menu}
+

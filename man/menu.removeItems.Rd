@@ -1,0 +1,26 @@
+\name{menu.removeItems}
+\alias{menu.removeItems}
+\title{Function listing all items available and offering them to be removed}
+\usage{
+  menu.removeItems(rriskModel,menuLevel=1)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the class
+  \code{modelClass}}
+
+  \item{menuLevel}{...}
+}
+\description{
+  This function list all items available and offers them to
+  be removed.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+menu.removeItems(rriskModel,menuLevel=1)}
+}
+\keyword{menu}
+

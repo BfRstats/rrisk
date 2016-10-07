@@ -1,0 +1,32 @@
+\name{change.conclusions}
+\alias{change.conclusions}
+\title{Function for edditing model slot 'conclusions'}
+\usage{
+  change.conclusions(conclusions)
+}
+\arguments{
+  \item{conclusions}{(model conclusions) is an object of
+  class \code{modelConclusionsClass}}
+}
+\value{
+  This function returns edited model slot 'conclusions'.
+}
+\description{
+  A change function for
+  \code{\linkS4class{modelConclusionsClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{model<-init.Model1()
+model@conclusions<-change.conclusions(model@conclusions)
+model@conclusions}
+}
+\keyword{edit}
+

@@ -1,0 +1,30 @@
+\name{menu.changeOrder}
+\alias{menu.changeOrder}
+\title{Function offering the user to redifine the order of the model topic parts}
+\usage{
+  menu.changeOrder(rriskModelObject,menuLevel=1,specification="normal")
+}
+\arguments{
+  \item{rriskModelObject}{is the \code{rrisk} model, whose
+  parts are to be reordered}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+
+  \item{specification}{specifies which objects are to be
+  reordered}
+}
+\description{
+  This function offers the user to redefine the order of
+  the model topic parts.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModelObject <- init.Model1()@authors@authors
+menu.changeOrder(rriskModelObject)}
+}
+\keyword{menu}
+

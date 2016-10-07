@@ -1,0 +1,22 @@
+\name{rrisk.chooseDir}
+\alias{rrisk.chooseDir}
+\title{Function that sets the path according to system environment}
+\usage{
+  rrisk.chooseDir(default=getwd())
+}
+\arguments{
+  \item{default}{the default path}
+}
+\description{
+  Function that sets the path according to system
+  environment
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rrisk.chooseDir(default=getwd()) }
+}
+\keyword{rrisk}
+

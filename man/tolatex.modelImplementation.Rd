@@ -1,0 +1,27 @@
+\name{tolatex.modelImplementation}
+\alias{tolatex.modelImplementation}
+\title{LaTeX code for producing texts displaying the model implementations}
+\usage{
+  tolatex.modelImplementation(rriskModel, file.name)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the
+  \code{rriskModel}}
+
+  \item{file.name}{is a character value that indicates the
+  Tex file where codes to be written into}
+}
+\description{
+  This creates the LaTeX scripts producing the fourth part
+  in the documentation - "Model Implementation".
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+tolatex.modelImplementation(rriskModel=rriskModel, file.name="report.tex") }
+}
+\keyword{report}
+

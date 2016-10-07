@@ -1,0 +1,22 @@
+\name{exportModelGraphs}
+\alias{exportModelGraphs}
+\title{Function that exports model graphs}
+\usage{
+  exportModelGraphs(rriskModel)
+}
+\arguments{
+  \item{rriskModel}{an instance of the \code{modelClass}}
+}
+\description{
+  Function that exports model graphs
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel <- init.Model1()
+exportModelGraphs(rriskModel)}
+}
+\keyword{model}
+

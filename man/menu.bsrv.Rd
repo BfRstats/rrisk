@@ -1,0 +1,21 @@
+\name{menu.bsrv}
+\alias{menu.bsrv}
+\title{Non-executable auxiliary function}
+\usage{
+  menu.bsrv(item,rriskModel,method="param",menuLevel=1)
+}
+\arguments{
+  \item{item}{...}
+
+  \item{rriskModel}{...}
+
+  \item{method}{character string defining bootstrapping
+  method, \code{method=c("param","nonparam")}}
+
+  \item{menuLevel}{...}
+}
+\description{
+  Non-executable auxiliary function
+}
+\keyword{items}
+

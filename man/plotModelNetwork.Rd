@@ -1,0 +1,28 @@
+\name{plotModelNetwork}
+\alias{plotModelNetwork}
+\title{Function creating model network graph}
+\usage{
+  plotModelNetwork(rriskModel,pdfGraph=FALSE)
+}
+\arguments{
+  \item{rriskModel}{an instance of the \code{modelClass}}
+
+  \item{pdfGraph}{whether a PDF graphic should be created}
+}
+\description{
+  Function that creates model network graph
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the packages
+  \code{network}, \code{grDevices} and \code{sna}.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+plotModelNetwork(rriskModel,pdfGraph=FALSE)}
+}
+\keyword{graphs}
+

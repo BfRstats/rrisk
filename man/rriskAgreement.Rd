@@ -1,0 +1,27 @@
+\name{rriskAgreement}
+\alias{rriskAgreement}
+\title{Function that creates the the window that asks for users' agreement}
+\usage{
+  rriskAgreement(demomode = FALSE)
+}
+\arguments{
+  \item{demomode}{whether the function be run under demo
+  mode}
+}
+\description{
+  Function that creates the window that asks for users'
+  agreement
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{rriskAgreement()}
+}
+\keyword{rrisk}
+

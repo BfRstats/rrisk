@@ -1,0 +1,32 @@
+\name{getItems}
+\alias{getItems}
+\title{Function that imports slots 'items' from another 'modelClass' object}
+\usage{
+  getItems(rriskModel,rriskModelFrom,
+    itemsToImportIndex=1:length(rriskModelFrom@items@items))
+}
+\arguments{
+  \item{rriskModel}{the \code{rrisk} model the items to be
+  exported to}
+
+  \item{rriskModelFrom}{the \code{rrisk} model from which
+  the parts are exported}
+
+  \item{itemsToImportIndex}{index of all items in the
+  rriskModelFrom object}
+}
+\description{
+  Function that imports items from another
+  \code{\linkS4class{modelClass}} object
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-new("modelClass")
+rriskModelFrom<-init.Model1()
+getItems(rriskModel,rriskModelFrom)}
+}
+\keyword{model}
+

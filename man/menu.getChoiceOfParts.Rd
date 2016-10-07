@@ -1,0 +1,36 @@
+\name{menu.getChoiceOfParts}
+\alias{menu.getChoiceOfParts}
+\title{Function listing all available parts of a rrisk model, from which it
+offers the user to choose and saves the choice of the user}
+\usage{
+  menu.getChoiceOfParts(rriskModel,rriskModelFrom,menuLevel=1,onlyItems=FALSE)
+}
+\arguments{
+  \item{rriskModel}{is the \code{rrisk} model where the
+  parts are to be exported to}
+
+  \item{rriskModelFrom}{is the \code{rrisk} model from
+  which the parts are exported}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+
+  \item{onlyItems}{decides whether only items are to be
+  exported}
+}
+\description{
+  This function lists all available parts of a \code{rrisk}
+  model, from which it offers the user to choose and saves
+  the choice of the user.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{emptyModel<-new("modelClass")
+rriskModel<-init.Model1()
+menu.getChoiceOfParts(emptyModel,rriskModel,menuLevel=1,onlyItems=FALSE) }
+}
+\keyword{menu}
+

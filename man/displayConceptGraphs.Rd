@@ -1,0 +1,29 @@
+\name{displayConceptGraphs}
+\alias{displayConceptGraphs}
+\title{Function that displays model concept graphs}
+\usage{
+  displayConceptGraphs(rriskModel,exportGraph=FALSE)
+}
+\arguments{
+  \item{rriskModel}{an instance of the \code{modelClass}}
+
+  \item{exportGraph}{whether the graphic should be exported
+  as well}
+}
+\description{
+  Function that displays model concept graphs
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the packages
+  \code{png} and \code{rgdal}.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+displayConceptGraphs(rriskModel) }
+}
+\keyword{graphs}
+

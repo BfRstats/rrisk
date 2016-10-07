@@ -1,0 +1,45 @@
+\name{change.nameversion}
+\alias{change.nameversion}
+\title{Function for edditing model slots 'name' and 'version'}
+\usage{
+  change.nameversion(name,version,authors,availableModels)
+}
+\arguments{
+  \item{name}{(model name) is an object of class
+  \code{modelNameClass}}
+
+  \item{version}{(model version) is an object of class
+  \code{modelVersionClass}}
+
+  \item{authors}{(model authors) is an object of class
+  \code{modelAuthorsClass}}
+
+  \item{availableModels}{is a character vector containing
+  model names that are available in the current rrisk
+  session}
+}
+\value{
+  This function returns edited model slots 'name' and
+  'version'.
+}
+\description{
+  A change function for \code{\linkS4class{modelNameClass}}
+  and \code{\linkS4class{modelVersionClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{model<-init.Model1()
+# It is not possible to change model name to "my model"
+newvalues<-change.nameversion(model@name,model@version,model@authors,
+  availableModels=c("my model"))
+newvalues}
+}
+\keyword{edit}
+

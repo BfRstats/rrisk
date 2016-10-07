@@ -1,0 +1,28 @@
+\name{plotTrafficLights}
+\alias{plotTrafficLights}
+\title{Function that creates a traffic lights plot for the outcome items}
+\usage{
+  plotTrafficLights(rriskModel,pdfGraph=FALSE)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the class
+  \code{modelClass}}
+
+  \item{pdfGraph}{decides whether the plot is as PDF data
+  to be saved}
+}
+\description{
+  A function that creates a traffic lights plot for the
+  outcome items.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel <- init.Model1()
+rriskModel<-run(rriskModel)
+plotTrafficLights(rriskModel,useNotApplicable=TRUE, pdfGraph=FALSE)}
+}
+\keyword{graphs}
+

@@ -1,0 +1,23 @@
+\name{showModelData}
+\alias{showModelData}
+\title{Function that shows item-data of a 'modelClass'}
+\usage{
+  showModelData(object)
+}
+\arguments{
+  \item{object}{a \code{modelClass} object}
+}
+\description{
+  Function that shows data of a
+  \code{\linkS4class{modelClass}}
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{object <- init.Model1()
+showModelData(object@items)  }
+}
+\keyword{model}
+

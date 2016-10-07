@@ -1,0 +1,28 @@
+\name{plotGAM}
+\alias{plotGAM}
+\title{Function that draws nonparamtric regression plots for the outcome items}
+\usage{
+  plotGAM(rriskModel,pdfGraph=FALSE)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the class
+  \code{modelClass}}
+
+  \item{pdfGraph}{decides whether the plot is as PDF data
+  to be saved}
+}
+\description{
+  A function that creates nonparamtric regression plots for
+  the outcome items.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel <- init.Model1()
+rriskModel<-run(rriskModel)
+plotGAM(rriskModel,pdfGraph=FALSE)}
+}
+\keyword{graphs}
+

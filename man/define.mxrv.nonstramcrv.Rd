@@ -1,0 +1,22 @@
+\name{define.mxrv.nonstramcrv}
+\alias{define.mxrv.nonstramcrv}
+\title{Non-executable auxiliary function}
+\usage{
+  define.mxrv.nonstramcrv(item,rriskModel,items.nonstra.index,items.nonstra.names,stratum.item)
+}
+\arguments{
+  \item{item}{...}
+
+  \item{rriskModel}{...}
+
+  \item{items.nonstra.index}{...}
+
+  \item{items.nonstra.names}{...}
+
+  \item{stratum.item}{...}
+}
+\description{
+  Non-executable auxiliary function
+}
+\keyword{items}
+

@@ -1,0 +1,27 @@
+\name{setScoringSystem}
+\alias{setScoringSystem}
+\title{Function that sets slots 'scoring system' of an 'modelClass' object}
+\usage{
+  setScoringSystem(rriskModel,newScoringSystem)
+}
+\arguments{
+  \item{rriskModel}{the \code{rrisk} model whose scoring
+  system is to be set}
+
+  \item{newScoringSystem}{the new scoring system}
+}
+\description{
+  Function that sets scoring system of an
+  \code{\linkS4class{modelClass}} object
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+newScoringSystem<-new("modelScoringClass")
+setScoringSystem(rriskModel,newScoringSystem)   }
+}
+\keyword{scoring}
+

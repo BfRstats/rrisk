@@ -1,0 +1,27 @@
+\name{menu.createSsystem}
+\alias{menu.createSsystem}
+\title{Function generating the user menu for creating scoring systems with various possibilities}
+\usage{
+  menu.createSsystem(rriskSessionSSystems,menuLevel=1)
+}
+\arguments{
+  \item{rriskSessionSSystems}{is the slot scoringsystem
+  from an instance of \code{rriskClass}}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+}
+\description{
+  This function generates the user menu for creating
+  scoring systems with various possibilities.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession<-init.rriskSession(useDemoModels = "all")
+menu.createSsystem(rriskSession@scoringsystems,menuLevel=1)}
+}
+\keyword{menu}
+

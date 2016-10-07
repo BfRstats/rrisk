@@ -1,0 +1,31 @@
+\name{myvalue}
+\alias{myvalue}
+\title{Non-executable auxiliary function}
+\usage{
+  myvalue(item,rriskModel,title="Tryme",menuLevel=1,batch=1,run=FALSE)
+}
+\arguments{
+  \item{item}{...}
+
+  \item{rriskModel}{...}
+
+  \item{title}{...}
+
+  \item{menuLevel}{...}
+
+  \item{batch}{...}
+
+  \item{run}{boolean value defining whether this function
+  nwill be calls during 1d or 2d simulation,
+  \code{run=c(TRUE,FALSE)}}
+}
+\description{
+  Function that evaluates and saves the input value for
+  item objects from the rriskModel class
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\keyword{items}
+

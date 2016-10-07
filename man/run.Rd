@@ -1,0 +1,26 @@
+\name{run}
+\alias{run}
+\title{Function that runs multidimensional simulations on the 'modelClass'}
+\usage{
+  run(rriskModel,sim.2d=TRUE,menuLevel=1)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the class
+  \code{modelClass}}
+
+  \item{sim.2d}{decides whether a 2-dimensional or
+  1-dimensional simulation to run}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+}
+\description{
+  A function that runs multidimensional simulations on the
+  \code{\linkS4class{modelClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\keyword{run}
+

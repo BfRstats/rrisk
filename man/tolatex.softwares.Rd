@@ -1,0 +1,28 @@
+\name{tolatex.softwares}
+\alias{tolatex.softwares}
+\title{LaTeX code for listing all softwares, R packages and the R version
+required by the model}
+\usage{
+  tolatex.softwares(rriskSession,file.name)
+}
+\arguments{
+  \item{rriskSession}{is an instance of class
+  \code{rriskClass}}
+
+  \item{file.name}{is a character value that indicates the
+  Tex file where codes to be written into}
+}
+\description{
+  This creates the LaTeX scripts for the second part in the
+  appendix - "softwares, packages and versions".
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession<-init.rriskSession(useDemoModels = "all")
+tolatex.softwares(rriskSession=rriskSession,file.name="report.tex") }
+}
+\keyword{report}
+

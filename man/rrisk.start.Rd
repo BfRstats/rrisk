@@ -1,0 +1,28 @@
+\name{rrisk.start}
+\alias{rrisk.start}
+\title{Function that loads all packages, initializes demoModels and starts user menu}
+\usage{
+  rrisk.start(useDemoModels="all", demomode=FALSE)
+}
+\arguments{
+  \item{useDemoModels}{which demoModels should be used.
+  Possible values are \code{useDemoModels=c("no","all",
+  "Demo model 1", "Demo model 2")}.}
+
+  \item{demomode}{a boolean value indicating whether model
+  should be run under the demo mode,
+  \code{demomode=c(TRUE,FALSE)}}
+}
+\description{
+  Function that loads all packages, initializes
+  \code{demoModels} and starts user menu
+}
+\details{
+  This function starts the rrisk session, it is the main
+  function.
+}
+\examples{
+\donttest{rrisk.start(useDemoModels="all")}
+}
+\keyword{rrisk}
+

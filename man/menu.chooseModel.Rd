@@ -1,0 +1,26 @@
+\name{menu.chooseModel}
+\alias{menu.chooseModel}
+\title{Function listing all available models to be chosen by the user}
+\usage{
+  menu.chooseModel(rriskSession,menuLevel=1)
+}
+\arguments{
+  \item{rriskSession}{is a \code{rriskClass} object}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+}
+\description{
+  This function lists all available models to be chosen by
+  the user.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession<-init.rriskSession(useDemoModels = "all")
+menu.chooseModel(rriskSession,menuLevel=1)}
+}
+\keyword{menu}
+

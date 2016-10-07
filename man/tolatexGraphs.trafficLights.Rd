@@ -1,0 +1,28 @@
+\name{tolatexGraphs.trafficLights}
+\alias{tolatexGraphs.trafficLights}
+\title{Function that creates LaTeX codes to import a trafficLights plot for the outcome items}
+\usage{
+  tolatexGraphs.trafficLights(rriskModel,file.name)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the class
+  \code{modelClass}}
+
+  \item{file.name}{is the name of the TeX file into which
+  the codes are to be written}
+}
+\description{
+  A function that creates LaTeX codes to import a
+  trafficlights plot for the outcom items.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel <- init.Model1()
+rriskModel<-run(rriskModel)
+tolatexGraphs.trafficLights(rriskModel,file.name="text.tex")}
+}
+\keyword{report}
+

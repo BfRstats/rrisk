@@ -1,0 +1,26 @@
+\name{menu.mainMenu}
+\alias{menu.mainMenu}
+\title{Function generating the main menu of rrisk}
+\usage{
+  menu.mainMenu(rriskSession,demomode=FALSE)
+}
+\arguments{
+  \item{rriskSession}{is an instance of \code{rriskClass}}
+
+  \item{demomode}{is a boolean value indicating whether the
+  model should be run under the demo mode,
+  \code{demomode=c(TRUE,FALSE)}}
+}
+\description{
+  This function generates the main menu of rrisk.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession<-init.rriskSession(useDemoModels = "all")
+menu.mainMenu(rriskSession)}
+}
+\keyword{menu}
+

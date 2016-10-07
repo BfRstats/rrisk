@@ -1,0 +1,23 @@
+\name{modelLoad}
+\alias{modelLoad}
+\title{Function that loads external models}
+\usage{
+  modelLoad(rriskSessionModels)
+}
+\arguments{
+  \item{rriskSessionModels}{the slot models of the instance
+  of the \code{rriskClass} object}
+}
+\description{
+  Function that loads external models
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession <- init.rriskSession(useDemoModels = "all")
+modelLoad(rriskSession@disclaimer)}
+}
+\keyword{model}
+

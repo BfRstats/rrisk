@@ -1,0 +1,36 @@
+\name{change.parts}
+\alias{change.parts}
+\title{Function for edditing model slots 'parts' and 'items'}
+\usage{
+  change.parts(parts,items)
+}
+\arguments{
+  \item{parts}{(model parts) is an object of class
+  \code{modelPartsClass}}
+
+  \item{items}{(model items) is an object of class
+  \code{modelItemsClass}}
+}
+\value{
+  This function returns a list containing edited model
+  parts and items.
+}
+\description{
+  A change function for
+  \code{\linkS4class{modelPartsClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{model<-init.Model1()
+results<-change.parts(model@parts,model@items)
+results}
+}
+\keyword{edit}
+

@@ -1,0 +1,27 @@
+\name{tolatex.outcomes}
+\alias{tolatex.outcomes}
+\title{isplaying the output in the R-console
+required by the model}
+\usage{
+  tolatex.outcomes(rriskModel,file.name)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the
+  \code{rriskModel}}
+
+  \item{file.name}{is a character value that indicates the
+  Tex file where codes to be written into}
+}
+\description{
+  This displays the output in the R-console.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+tolatex.outcomes(rriskModel=rriskModel,file.name="report.tex") }
+}
+\keyword{report}
+

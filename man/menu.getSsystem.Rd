@@ -1,0 +1,31 @@
+\name{menu.getSsystem}
+\alias{menu.getSsystem}
+\title{Function listing all items available and offering them to be removed}
+\usage{
+  menu.getSsystem(rriskModel,rriskSessionSsystems,menuLevel=1)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the
+  \code{modelClass}}
+
+  \item{rriskSessionSsystems}{are the slot models from an
+  instance of \code{rriskClass}}
+
+  \item{menuLevel}{is a numeric value that indicates the
+  load of the current menu}
+}
+\description{
+  This function lists all scoring systems available and
+  offers them to be set to the current model.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession<-init.rriskSession(useDemoModels="Demo model 1")
+menu.getSsystem(rriskModel=rriskSession@models[[1]],
+rriskSession@scoringsystems,menuLevel=1)}
+}
+\keyword{menu}
+

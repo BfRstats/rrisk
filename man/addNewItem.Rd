@@ -1,0 +1,27 @@
+\name{addNewItem}
+\alias{addNewItem}
+\title{Function that adds new slots 'items' to a 'modelClass' object}
+\usage{
+  addNewItem(rriskModel,menuLevel=1)
+}
+\arguments{
+  \item{rriskModel}{an instance of the \code{modelClass},
+  i.e. any rrisk model to which new item(s) should be
+  added}
+
+  \item{menuLevel}{...}
+}
+\description{
+  Function that adds new items to a
+  \code{\linkS4class{modelClass}} object
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+addNewItem(rriskModel)}
+}
+\keyword{misc}
+

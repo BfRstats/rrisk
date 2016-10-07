@@ -1,0 +1,33 @@
+\name{tolatex.glossAbbr}
+\alias{tolatex.glossAbbr}
+\title{LaTeX code for displaying the model's glossaries and abbreviations}
+\usage{
+  tolatex.glossAbbr(rriskSession,rriskModel,file.name)
+}
+\arguments{
+  \item{rriskSession}{is an instance of the
+  \code{rriskClass}}
+
+  \item{rriskModel}{is an instance of the
+  \code{rriskModel}}
+
+  \item{file.name}{is a character value that indicates the
+  Tex file where codes to be written into}
+}
+\description{
+  This creates the LaTeX scripts for the nineth part in the
+  documentation - "Glossary and abbreviations", commencing
+  the appendix of the documentation.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+rriskSession<-init.rriskSession(useDemoModels = "all")
+tolatex.glossAbbr(rriskSession=rriskSession,
+rriskModel=rriskModel,file.name="report.tex") }
+}
+\keyword{report}
+

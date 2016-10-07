@@ -1,0 +1,23 @@
+\name{ssystemSave}
+\alias{ssystemSave}
+\title{Function that saves a scoring system object}
+\usage{
+  ssystemSave(rriskSsystem)
+}
+\arguments{
+  \item{rriskSsystem}{the slot scoringsystems of an
+  instance of the \code{rriskSession} object}
+}
+\description{
+  Function that saves a scoring system object
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession <- init.rriskSession(useDemoModels = "all")
+ssystemSave(rriskSession@scoringsystems[[1]])}
+}
+\keyword{scoring}
+

@@ -1,0 +1,35 @@
+\name{change.uncertainties}
+\alias{change.uncertainties}
+\title{Function for edditing model slot 'uncertainties'}
+\usage{
+  change.uncertainties(uncertainties,scoring)
+}
+\arguments{
+  \item{uncertainties}{(model uncertainties) is an object
+  of class \code{modelUncertaintiesClass}}
+
+  \item{scoring}{(scoring system of the current model) is
+  an object of class \code{modelScoringClass}}
+}
+\value{
+  This function returns edited model slot 'uncertainties'.
+}
+\description{
+  A change function for
+  \code{\linkS4class{modelUncertaintiesClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{model<-init.Model1()
+model@uncertainties<-change.uncertainties(model@uncertainties, model@scoring)
+model@uncertainties}
+}
+\keyword{edit}
+

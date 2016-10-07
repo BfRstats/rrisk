@@ -1,0 +1,23 @@
+\name{showAvailableModels}
+\alias{showAvailableModels}
+\title{Function that display all available models of an 'rriskClass' object}
+\usage{
+  showAvailableModels(rriskSession)
+}
+\arguments{
+  \item{rriskSession}{an instance of the \code{rriskClass}}
+}
+\description{
+  Function that displays all available models of an
+  \code{\linkS4class{rriskClass}} object
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskSession <- init.rriskSession(useDemoModels = "all")
+showAvailableModels(rriskSession)}
+}
+\keyword{model}
+

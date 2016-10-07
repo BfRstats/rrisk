@@ -1,0 +1,22 @@
+\name{init.scoresystem1}
+\alias{init.scoresystem1}
+\title{Function to initialize the object scoringSystem as an instance of 'modelScoringClass-class'}
+\usage{
+  init.scoresystem1()
+}
+\value{
+  scoringSystem1
+}
+\description{
+  This initializes the object scoringSystem as an instance
+  of \code{\linkS4class{modelScoringClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{scoringSystem<-init.scoresystem1()}
+}
+\keyword{init}
+

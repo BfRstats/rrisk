@@ -1,0 +1,32 @@
+\name{change.glossary}
+\alias{change.glossary}
+\title{Function for edditing model slot 'glossary'}
+\usage{
+  change.glossary(glossary)
+}
+\arguments{
+  \item{glossary}{(model glossary) is an object of class
+  \code{modelGlossaryClass}}
+}
+\value{
+  This function returns edited model slot 'glossary'.
+}
+\description{
+  A change function for
+  \code{\linkS4class{modelGlossaryClass}}.
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\note{
+  This function requires some functions from the package
+  \code{tcltk}.
+}
+\examples{
+\donttest{model<-init.Model1()
+model@glossary<-change.glossary(model@glossary)
+model@glossary}
+}
+\keyword{edit}
+

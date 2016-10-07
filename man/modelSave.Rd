@@ -1,0 +1,23 @@
+\name{modelSave}
+\alias{modelSave}
+\title{Function that saves a model object}
+\usage{
+  modelSave(rriskModel)
+}
+\arguments{
+  \item{rriskModel}{an instance of the \code{modelClass}
+  object}
+}
+\description{
+  Function that saves a model object
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel <- init.Model1()
+modelSave(rriskModel)}
+}
+\keyword{model}
+

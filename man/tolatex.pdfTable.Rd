@@ -1,0 +1,27 @@
+\name{tolatex.pdfTable}
+\alias{tolatex.pdfTable}
+\title{producing LaTeX scripts for the item pobability density functions (pdf)}
+\usage{
+  tolatex.pdfTable(rriskModel, file.name)
+}
+\arguments{
+  \item{rriskModel}{is an instance of the
+  \code{rriskModel}}
+
+  \item{file.name}{is a character value that indicates the
+  Tex file where codes to be written into}
+}
+\description{
+  This function creates the LaTeX scripts for the item
+  pobability density functions (pdf).
+}
+\details{
+  This function is not intended to be called directly but
+  is internally called during \code{rrisk} session.
+}
+\examples{
+\donttest{rriskModel<-init.Model1()
+tolatex.pdfTable(rriskModel=rriskModel,file.name="report.tex")}
+}
+\keyword{report}
+
