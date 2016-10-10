@@ -19,7 +19,7 @@ URL: http://www.bfr.bund.de/cd/52158
 Depends: R(>= 2.11.0), methods, tcltk, png, rgdal, grDevices, network,
         sna, tools, tree, mgcv, rriskBayes2, rriskDistributions, xtable,
         fitdistrplus
-SystemRequirements: OpenBUGS (http://www.openbugs.info/w/Downloads)
+SystemRequirements: SystemRequirements:JAGS (https://sourceforge.net/projects/mcmc-jags/files)
 Authors@R: c(person(given="Matthias",
         family="Greiner",email="matthias.greiner@bfr.bund.de",role=c("aut",
         "cre"),comment="Federal Institute for Risk Assessment,
@@ -35,8 +35,8 @@ Authors@R: c(person(given="Matthias",
         family="Yang",email="yang@stat-up.com",role=c("aut"),comment="STAT-UP
         Statistical Consulting"), person(given="Markus",
         family="Junker",role=c("aut"),comment="MaSt Services") )
-Version: 2.11
-Date: 2012-10-26
+Version: 2.12
+Date: 2016-10-10
 Collate: 'changeFunctions.R' 'classes.R' 'defineItemtype.R'
         'helpFunctions.R' 'initFunctions.R' 'menuFunctions.R'
         'rrisk-package.R' 'runFunctions.R' 'sumupMethods.R'
