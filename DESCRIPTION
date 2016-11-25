@@ -8,7 +8,7 @@ Author: Natalia Belgorodski (STAT-UP Statistical Consulting, Germany), Matthias
     (STAT-UP Statistical Consulting, Germany), Yinchong Yang (STAT-UP
     Statistical Consulting, Germany), Markus Junker (MaSt Services)
 Maintainer: Federal Institute for Risk Assessment, Matthias Greiner
-        <matthias.greiner@bfr.bund.de>
+    <matthias.greiner@bfr.bund.de>
 Description: This R packages provides the whole functionality of the rrisk
     project developed by Federal Institute for Risk Assessment. This tool
     supports the risk assessor in definition, implementation and documantation
@@ -16,29 +16,50 @@ Description: This R packages provides the whole functionality of the rrisk
 License: GPL(>=3)
 LazyLoad: yes
 URL: http://www.bfr.bund.de/cd/52158
-Depends: R(>= 2.11.0), methods, tcltk, png, rgdal, grDevices, network,
-        sna, tools, tree, mgcv, rriskBayes2, rriskDistributions, xtable,
-        fitdistrplus
-SystemRequirements: SystemRequirements:JAGS (https://sourceforge.net/projects/mcmc-jags/files)
-Authors@R: c(person(given="Matthias",
-        family="Greiner",email="matthias.greiner@bfr.bund.de",role=c("aut",
-        "cre"),comment="Federal Institute for Risk Assessment,
-        Germany"), person(given="Natalia",
-        family="Belgorodski",email="belgorodski@stat-up.com",role=c("aut"),comment="STAT-UP
-        Statistical Consulting"), person(given="Kristin",
-        family="Tolksdorf",role=c("aut"),comment="Federal Institute for
-        Risk Assessment, Germany"), person(given="Christine",
-        family="Mueller-Graf",role=c("aut"),comment="Federal Institute
-        for Risk Assessment, Germany"), person(given="Katharina",
-        family="Schueller",email="schueller@stat-up.com",role=c("aut"),comment="STAT-UP
-        Statistical Consulting"), person(given="Yinchong",
-        family="Yang",email="yang@stat-up.com",role=c("aut"),comment="STAT-UP
-        Statistical Consulting"), person(given="Markus",
-        family="Junker",role=c("aut"),comment="MaSt Services") )
+Depends: R(>= 2.11.0), methods, tcltk, png, rgdal, grDevices, network, sna, 
+    tools, tree, mgcv, rriskBayes2, mc2d, rriskDistributions, xtable, 
+    fitdistrplus
+SystemRequirements: JAGS (https://sourceforge.net/projects/mcmc-jags/files)
+Authors@R: c(
+    person(given="Matthias", family="Greiner", 
+           email="matthias.greiner@bfr.bund.de",
+           role=c("aut", "cre"),
+           comment="Federal Institute for Risk Assessment, Germany"), 
+    person(given="Natalia", family="Belgorodski",
+           email="belgorodski@stat-up.com",
+           role=c("aut"),
+           comment="STAT-UP Statistical Consulting"), 
+    person(given="Kristin", family="Tolksdorf", 
+           role=c("aut"), 
+           comment="Federal Institute for Risk Assessment, Germany"), 
+    person(given="Christine", family="Mueller-Graf",
+           role=c("aut"),
+           comment="Federal Institute for Risk Assessment, Germany"), 
+    person(given="Katharina", family="Schueller",
+           email="schueller@stat-up.com",
+           role=c("aut"),
+           comment="STAT-UP Statistical Consulting"), 
+    person(given="Yinchong", family="Yang",
+           email="yang@stat-up.com",
+           role=c("aut"),
+           comment="STAT-UP Statistical Consulting"), 
+    person(given="Markus", family="Junker",
+           role=c("aut"), 
+           comment="MaSt Services")
+    )
 Version: 2.12
 Date: 2016-10-10
-Collate: 'changeFunctions.R' 'classes.R' 'defineItemtype.R'
-        'helpFunctions.R' 'initFunctions.R' 'menuFunctions.R'
-        'rrisk-package.R' 'runFunctions.R' 'sumupMethods.R'
-        'toLatexFunctions.R' 'writeoutMethods.R'
+Collate:
+    'changeFunctions.R'
+    'classes.R'
+    'defineItemtype.R'
+    'helpFunctions.R'
+    'initFunctions.R'
+    'menuFunctions.R'
+    'rrisk-package.R'
+    'runFunctions.R'
+    'sumupMethods.R'
+    'toLatexFunctions.R'
+    'writeoutMethods.R'
 Packaged: 2012-10-26 10:16:22 UTC; konstantin
+RoxygenNote: 5.0.1
