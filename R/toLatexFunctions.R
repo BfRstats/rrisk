@@ -436,7 +436,7 @@ tolatex.basics<-function(rriskModel,file.name)
             )
       }
     }
-    #bfrgreiner Falleinschränkung 
+    #bfrgreiner Falleinschr?nkung 
   figuresText.l <- length(figuresText)
   cat(paste("The model concept is illustrated graphically (Fig.~\\ref{",figuresText[1],"}",
     ifelse(figuresText.l>1,paste("--\\ref{",figuresText[figuresText.l],"}).",sep=""),")."),sep=""),
@@ -617,6 +617,7 @@ if(length(rriskModel@items@items) > 0)
   } # end if
   scoreNames<-paste(scoreNames,collapse=" & ")
   
+ 
   for (i in c(1:length(rriskModel@items@items))){
     items.all <- append(items.all, rriskModel@items@items[[i]]@name, after = length(items.all))
   } # end for
@@ -630,6 +631,7 @@ if(length(rriskModel@items@items) > 0)
     , file = file.name, append = TRUE)                                          # print i-th part
     
     itm <- strsplit(rriskModel@parts@parts[[i]]@items, " ")                     # for all the items in i-th part
+    
     for (j in c(1:length(itm[[1]]))) {                                          # for the j-th item in i-th part
         for (k in c(1:length(rriskModel@items@items))) {                        # for the k-th item in the model
             if (itm[[1]][j] == rriskModel@items@items[[k]]@name) {              # if this item is in the model, then save following information: 
@@ -716,37 +718,43 @@ if(length(rriskModel@items@items) > 0)
         if (this.type2 %in% c("mcrv", "fnrv", "rsrv", "bsrv", "mxrv") & (length(this.data)!=0) ) {      
           cat(paste("Statistics for evaluated item: \\\\", sep = ""), file = file.name, append = TRUE)
           cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
+          
         
+          
           if (class(this.data) == "table") {
             xt <- capture.output(print.xtable(xtable(this.data),include.rownames=FALSE))
-            cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+            cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
+            #cat(xt, file = file.name, append = TRUE)
           } else if (class(this.data) == "data.frame"){
             xt <- capture.output(print.xtable(xtable(summary(this.data)),include.rownames=FALSE))
-            cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+            cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
+            #cat(xt, file = file.name, append = TRUE)
           } else {
             xt <- ""
           }  # end if (class(this.data) == "table") {
         
           cat("\\end{table}", file = file.name, append = TRUE)
+
         
         } else if (this.type2 == "stra" & length(this.data)!=0) { # special case of stra
           cat(paste(ifelse(this.stratumevaluated != "" && this.stratumevaluated == TRUE, "Evaluated ", ""), "Stratum: \\\\", sep = ""), file = file.name, append = TRUE)
           cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
           stra <- capture.output(print.xtable(xtable(this.data$stratum),include.rownames=FALSE))  
-          cat(stra[-c(1:4, length(stra), length(stra)-1)], file = file.name, append = TRUE)
+          cat(stra[-c(1:4, length(stra), length(stra))], file = file.name, append = TRUE)
           cat("\\end{table}", file = file.name, append = TRUE)
         } else if (this.type2 == "data" & length(this.data)!=0){
           cat("Summary statistics of data set: \\\\", file = file.name, append = TRUE)
           cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
           xt <- capture.output(print.xtable(xtable(summary(this.data)),include.rownames=FALSE))  
-          cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+          cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
           cat("\\end{table}", file = file.name, append = TRUE)
         } else if(this.type2 == "bdjp" & length(this.data)!=0){
           cat("Summary statistics of bdjp item: \\\\", file = file.name, append = TRUE)
           cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
           xt <- capture.output(print.xtable(xtable(this.data),include.rownames=FALSE))  
-          cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+          cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
           cat("\\end{table}", file = file.name, append = TRUE)
+      
         }# end  if (this.type2 %in% c("mcrv", "fnrv", "rsrv", "bsrv") & (length(this.data)!=0) )
       
     }
@@ -835,8 +843,11 @@ if(length(rriskModel@items@items) > 0)
                     ", sep = ""),
                     file = file.name, append = TRUE)
                     #}
+               
                     
                     cat(paste("\\end{longtable}", sep = ""), file = file.name, append = TRUE)
+              
+                 
                     
                     if (this.type2 %in% c("mcrv", "fnrv", "rsrv", "bsrv", "mxrv") & length(this.data)!=0 ) {
                     
@@ -845,10 +856,10 @@ if(length(rriskModel@items@items) > 0)
 
                       if (class(this.data) == "table") {
                         xt <- capture.output(print.xtable(xtable(this.data),include.rownames=FALSE))
-                        cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+                        cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
                       } else if (class(this.data) == "data.frame") {
                         xt <- capture.output(print.xtable(xtable(summary(this.data)),include.rownames=FALSE))
-                        cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+                        cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
                       } else {
                         xt <- ""
                       } # end  if (class(this.data) == "table")                    
@@ -858,19 +869,19 @@ if(length(rriskModel@items@items) > 0)
                       cat(paste(ifelse(this.stratumevaluated != "" && this.stratumevaluated == TRUE, "Evaluated ", ""), "Stratum: \\\\", sep = ""), file = file.name, append = TRUE)
                       cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
                       stra <- capture.output(print.xtable(xtable(this.data$stratum),include.rownames=FALSE))  
-                      cat(stra[-c(1:4, length(stra), length(stra)-1)], file = file.name, append = TRUE)
+                      cat(stra[-c(1:4, length(stra), length(stra))], file = file.name, append = TRUE)
                       cat("\\end{table}", file = file.name, append = TRUE)
                     } else if (this.type2 == "data" & length(this.data)!=0){
                       cat("Summary statistics of data set: \\\\", file = file.name, append = TRUE)
                       cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
                       xt <- capture.output(print.xtable(xtable(summary(this.data)),include.rownames=FALSE)) 
-                      cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+                      cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
                       cat("\\end{table}", file = file.name, append = TRUE)
                     } else if(this.type2 == "bdjp" & length(this.data)!=0){
                       cat("Summary statistics of bdjp item: \\\\", file = file.name, append = TRUE)
                       cat("\\vspace{-.4cm}\\begin{table}[H]", file = file.name, append = TRUE)
                       xt <- capture.output(print.xtable(xtable(this.data),include.rownames=FALSE)) 
-                      cat(xt[-c(1:4, length(xt), length(xt)-1)], file = file.name, append = TRUE)
+                      cat(xt[-c(1:4, length(xt), length(xt))], file = file.name, append = TRUE)
                       cat("\\end{table}", file = file.name, append = TRUE)
                     }# end  if (this.type2 %in% c("mcrv", "fnrv", "rsrv", "bsrv") & (length(this.data)!=0) )
                 }
@@ -1957,6 +1968,7 @@ cat("Writing pdf table...\n")
 #' \donttest{rriskModel<-init.Model1(demomode=TRUE)
 #' rriskSession<-init.rriskSession(useDemoModels = "all", demomode=TRUE)
 #' createModelReport(rriskModel=rriskModel, rriskSession=rriskSession)}
+
 
 createModelReport<-function(rriskModel,rriskSession,menuLevel=1)
 {
