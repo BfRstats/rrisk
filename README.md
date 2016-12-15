@@ -18,15 +18,15 @@ The special features and development goals of the software are:
 
 The program and documentation can be downloaded from this repository. Use the following in R
 
-````
-if(!require(devtools))
+```
+if (!require(devtools))
 {
   install.packages("devtools")
   library(devtools)
 }
 
-install_github("STAT-UP/rrisk", auth_token = "YOUR PERSONAL ACCESS TOKEN")
-````
+install_github("BfRstats/rrisk", dependencies = TRUE)
+```
 
 ## Further required or recommended software to run rrisk
 
